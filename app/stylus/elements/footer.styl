@@ -1,0 +1,84 @@
+.footer
+	.contact
+		clear both
+		//display block
+		&__header
+			width 100%
+			margin 2em 0 
+		&__subtitle1
+			width 100%
+			+above(b3)
+				display none
+		&__subtitle2
+			display none
+			+above(b3)
+				display block
+		&__form
+			box-sizing border-box 
+			width 100%
+			padding 1em
+			
+		.menu-social
+			&__list
+			&__item
+				display inline-block
+			&__link
+				padding 0.25em
+				font-size 1.6em
+				text-decoration none
+				color white
+			
+		&__info
+			margin-top 2em
+			margin-bottom 1.5em
+			p
+				color green
+				margin 0
+				font-size 1.1em
+				span
+					color white
+		
+	.contact-right
+		margin auto
+		+between(640px,b3)
+			width 100%
+			max-width 80% 
+		+above(b3)	
+			width 50%
+			float right
+			margin-top 2em
+			margin-bottom 4em
+			text-align left
+			
+		
+	.contact-left
+		+above(b3)	
+			width 35%
+			float left
+			margin-top 2em
+			text-align left
+		
+					
+	.credits
+		clear both
+		padding 1em
+		text-align center
+		&__copyright
+			+above(b1)
+				//float left
+				display inline-block
+				text-align left
+				width 49%
+		&__author
+			+above(b1)
+				//float right
+				display inline-block
+				text-align right
+				width 50%
+			a
+				text-decoration none
+				p
+					color yellow
+		+above(b2)
+			display flex
+			justify-content space-between

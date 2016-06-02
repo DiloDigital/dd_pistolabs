@@ -1,0 +1,23 @@
+extends ../layouts/ly_header.jade
+
+block logo-url
+	a(href="/index.html", title="loguillo").logotipo
+		.slogan
+			img(src="img/logotipo_pistolabs.png", width="260", alt="")
+
+block banner-main
+	.slider
+		input#sbutton1(type="radio", name="sradio")
+		label(for="sbutton1")
+		input#sbutton2(type="radio", name="sradio")
+		label(for="sbutton2")
+		input#sbutton3(type="radio", name="sradio")
+		label(for="sbutton3")
+		input#sbutton4(type="radio", name="sradio")
+		label(for="sbutton4")
+
+		ul
+			li: img(src="img/banner-portada/01.jpg", alt="")
+			li: img(src="img/banner-portada/02.jpg", alt="")
+			li: img(src="img/banner-portada/03.jpg", alt="")
+			li: img(src="img/banner-portada/04.jpg", alt="")

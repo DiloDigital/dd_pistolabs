@@ -1,0 +1,158 @@
+//   Helper classes
+
+.hidden
+  display none !important
+  visibility hidden
+
+.visuallyhidden
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+  clip auto
+  height auto
+  margin 0
+  overflow visible
+  position static
+  width auto
+
+.invisible
+  visibility hidden
+
+.clearfix:before,
+.clearfix:after
+  content " "
+  display table
+
+.clearfix
+  *zoom 1
+    &:after
+      clear both
+
+// responsive
+
+.max-width
+  width 100%
+  max-width 1200px
+  margin-left auto
+  margin-right auto
+  overflow hidden
+  box-sizing border-box
+  &--extra
+    @extends .max-width
+    max-width 1480px
+
+.img-responsive
+  width 100%
+  max-width 100%
+  height auto
+  
+.list-none
+  list-style-type none
+
+.decoration-none
+  text-decoration none
+
+.non-margin
+  margin 0
+  padding 0
+
+.wrap
+  width 1200px
+  margin-left auto
+  margin-right auto
+
+// color Background
+
+.bg
+  &--white
+      background-color white
+  &--black
+      background-color black
+  &--grey-light
+      background-color grey_bg0
+  &--grey
+      background-color grey_bg1
+  &--grey-dark
+      background-color grey_bg2
+  &--green
+        background-color green
+  &--magenta
+        background-color magenta
+
+// alineaciones
+
+.text
+  &--center
+      text-align center
+  &--left
+      text-align left
+  &--right
+      text-align right
+
+  &--black
+      color black
+  &--white
+      color white
+  &--grey-light
+      color grey_light
+  &--grey
+      color grey
+  &--magenta
+      color magenta
+  
+  &--main
+      font-size 1.4em
+  &--p2
+      font-size 1.6em
+      +below(b1)
+        font-size 20px
+  &--p3
+      font-size 1em
+  &--p4
+      font-size 0.8em
+  &--p5
+      font-size 0.875em
+      font-family abel
+        
+.title
+  &--main
+    font-size 3.8em
+    //margin 0
+    //letter-spacing 0.0625em
+    //line-height 1.2
+    +above(640px)
+      font-size 2.4em
+  &--sub2
+    font-size 2.4em
+  &--sub3
+    font-size 1.3em
+  &--sub4
+    font-size 1em
+    
+  
+h1, h2, h3, h4
+  font-family righteous
+  color white
+  margin-top 0
+  //margin-bottom 0
+  //font-weight bold
+  text-transform uppercase
+h1,h2
+  +below(b1)
+    font-size 32px!important
+h3
+  +below(b1)
+    font-size 20px!important
+  
+p, ul
+  font-family raleway
+  color white
+  

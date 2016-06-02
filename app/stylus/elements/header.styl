@@ -1,0 +1,167 @@
+.header
+	padding 0.5em 3%
+	background black
+	+above(b2)
+		position absolute
+		top 0
+		right 0
+		left 0
+		display flex
+		justify-content space-between
+		align-items center
+		background none
+		z-index 10
+	.logo
+		.logotipo
+			float left
+			.slogan
+				img
+					width 200px
+			+above(b2)
+				.slogan
+					img
+						width 280px
+	.main-nav
+		margin-top 1.2em
+		+above(b2)
+			margin-top 0 
+			display flex
+			justify-content space-around
+			align-items center
+			
+		&__cont
+			display none
+			+above(b2)
+				display flex!important
+		&__list
+		&__item
+			+above(b2)
+				display flex
+		&__link
+			display block
+			text-decoration none
+			font-family righteous
+			font-size 1.3em
+			color white
+			text-align center
+			border 3px solid white
+			border-radius 2em
+			&:hover
+				background magenta
+				color white
+			+between(b1,900px)
+				//width 6em
+				padding 0.5em 0.5em
+				margin-left 0.2em
+			+above(900px)
+				text-align left
+				background none
+				padding 0.5em 1.5em
+				margin-left 1em
+			 
+	
+		.toggle-menu
+			display none
+			color white
+			margin-left 1em
+			font-size 2em
+			text-align right
+
+					
+.slider
+	width 100%
+	margin 0 auto
+	overflow hidden
+	text-align center
+	position relative
+
+	input, label
+		border-radius 50%
+	input[type="radio"]
+		display none
+
+	input[type="radio"] + label
+		display inline-block
+		width 15px
+		height 15px
+		margin 0.5em
+		background red
+		cursor pointer
+	
+	#sbutton1 + label,
+	#sbutton2 + label,
+	#sbutton3 + label,
+	#sbutton4 + label
+		background white
+		background-size 100% 100%
+		opacity 0.3
+		position absolute
+		top 0.5em
+		+above(b2)
+			top 7em
+		
+	#sbutton1 + label
+		left 30%
+		+above(b2)
+			left 40% 
+	#sbutton2 + label
+		left 40%
+		+above(b2)
+			left 45%
+	#sbutton3 + label
+		left 50%
+		+above(b2)
+			left 50%
+	#sbutton4 + label
+		left 60%
+		+above(b2)
+			left 55%
+
+	ul
+		clear both
+		margin-top 0
+		padding 0
+		width 400%
+		transition all 0.5s
+		animation slider 20s infinite alternate
+		li
+			width 25%
+			float left
+			list-style none
+			img
+				width 100%
+				display block
+
+#sbutton1
+	&:checked
+		& ~ ul
+			margin-left 0
+			animation none
+#sbutton2
+	&:checked
+		& ~ ul
+			margin-left -100%
+			animation none
+#sbutton3
+	&:checked
+		& ~ ul
+			margin-left -200%
+			animation none
+#sbutton4
+	&:checked
+		& ~ ul
+			margin-left -300%
+			animation none
+
+@keyframes slider
+	0%, 20%
+		margin-left 0
+
+	25%, 40%
+		margin-left -100%
+
+	45%, 70%
+		margin-left -200%
+
+	75%, 100%
+		margin-left -300%

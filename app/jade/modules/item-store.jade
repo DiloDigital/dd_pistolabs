@@ -1,0 +1,20 @@
+article.item-modal#item-modal
+    div.bg--white.box
+
+        .item-modal__cont
+            .item-modal__img
+                block item-modal_img
+                    img(src="img/propuesta.jpg", class="img-responsive", alt="")
+            .item-modal__right
+                .item-modal__header
+                    block item-modal_header
+                        h3.title--sub3.text--grey HYDRA-G
+                        //--p.precio 
+                        p.text--p3.text--grey Contamos con los mejores precios del mercado porque somos importadores directos
+
+                //--.item-modal__button-contacto
+                    a(href="/index.html#contactanos").btn-submit ¡Contáctanos!
+
+        .item-modal__description.bg--white
+            block item-modal_description
+                p.text--p3.text--grey Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nemo consectetur dolorem quo quos! Libero sunt veritatis, quae cumque? Consectetur expedita neque error consequuntur placeat quaerat similique commodi fuga consequatur!

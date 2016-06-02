@@ -1,0 +1,121 @@
+.store
+	padding 1em
+	.header-store
+		padding 3em
+		line-height 1
+		text-align center
+		+above(b2)
+			width 640px
+			margin auto
+		+above(1280px)
+			width 100%
+	&__button
+		text-align center
+		margin 1em
+
+	&__separator
+		width 100%
+		+above(b1)
+			display flex
+	&__categorias
+		display block
+		text-align center
+		padding 0 10%
+		h3.title--sub3
+			margin 1em 0
+			+above(b1)
+				margin 2em 0
+		+above(b1)
+			padding 2em 2em
+			text-align left
+			width 40%
+			max-width 250px
+		+above(b2)
+			width 250px
+		h3
+			margin 2em 0
+			text-align center
+		ul
+			padding-bottom 1em
+			ul
+				.subcat
+					display block
+					color green
+					padding-bottom 1em
+					border-bottom 1px solid white
+					margin-bottom 1em
+				li
+					a
+						text-decoration none
+						p
+							margin 0.3em 0
+							pointer cursor
+
+	&__content
+		width 100%
+		display block
+		+above(b1)
+			width 100%
+		.header-productos
+			width 100%
+			h3
+				margin-top 0
+				margin-left 1em
+				font-size 1.5em
+				+below(b1)
+					margin 1em
+				
+			.paginador-productos
+				width 100%
+				display block
+				padding 1% 5%
+				.all
+					
+					width 45%
+					display inline-block
+					text-align left
+					p
+						color black
+						pointer cursor
+						font-weigth bold
+						margin 0
+						font-size 1.2em
+						font-family righteous
+				.paginador
+					width 45%
+					display inline-block
+					text-align right
+		.productos
+			//&__header
+			&__cont
+				padding 0.5em 0.5em
+			&__item
+				figure
+					padding 0
+					margin-bottom 3em
+					+above(b2)
+						margin 0
+					.productos-img
+						margin auto
+						margin-bottom 0.8em
+						width 100%
+						img
+							border-radius 5px
+							
+					figcaption
+						margin auto
+						text-align center
+						width 90%
+						+above(b2)
+							width 80%
+						p
+							margin 0
+						.precio
+							font-size 1.3em
+							font-family righteous
+							color magenta
+							margin 0.5em 0
+							&:before
+								content '$ '
+								font-size 1.1em
+								color magenta

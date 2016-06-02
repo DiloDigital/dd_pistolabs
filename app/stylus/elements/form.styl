@@ -1,0 +1,66 @@
+.form__group label
+    display none
+
+.form
+    overflow hidden
+    width 100%
+    font-family raleway
+    &__group
+        margin 0.2em 0
+    &__control
+        display block
+        width 100%
+        height 20px
+        padding 15px 12px
+        font-size 1em
+        color grey
+        background white
+        //background-color rgba(white,0.8)
+        border 1px solid grey_light
+        box-sizing border-box
+        &: focus
+            border-color #66afe9
+            outline 0
+            background white
+        &::-moz-placeholder
+            color #999
+            opacity 1
+    &__submit
+        display block
+    
+
+#mensaje
+    max-width 100%
+    height 120px
+    max-height 120px
+    font-size 1.1em
+
+fieldset
+    display block
+    margin-left 0
+    margin-right 0
+    padding-top 0
+    padding-bottom 0
+    padding-left 0
+    padding-right 0
+    border none
+
+legend
+    display none
+    padding 0
+    margin 0
+    
+input[name="correo"]
+    +above(b2)
+        width 49.9%
+        float left
+        margin-bottom 0.1em
+    
+input[name="telefono"]
+    +above(b2)
+        width 49.9%
+        float right
+
+#form-messages
+    color white
+    padding-top 1em

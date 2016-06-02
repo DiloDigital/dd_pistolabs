@@ -1,0 +1,37 @@
+main#main
+	section.valores.box#valores
+		div.max-width
+			.valores__cont.mob-2-pc-3
+				.valores__item
+					figure
+						.valores-img
+							block valores01-img
+								img(src="img/valores-01.png", class="img-responsive", alt="")
+						figcaption
+							block valores01-figcaption
+								h4.title--sub4 subtitulo01
+								p.text--p4 texto01
+				.valores__item
+					figure
+						.valores-img
+							block valores02-img
+								img(src="img/valores-02.png", class="img-responsive", alt="")
+						figcaption
+							block valores02-figcaption
+								h4.title--sub4 subtitulo02
+								p.text--p4 texto02 
+				.valores__item
+					figure
+						.valores-img
+							block valores03-img
+								img(src="img/valores-03.png", class="img-responsive", alt="")
+						figcaption
+							block valores03-figcaption
+								h4.title--sub4 subtitulo03
+								p.text--p4 texto03
+
+	//--block servicios
+		include ../modules/servicios.jade
+
+	//--block banner-middle
+		include ../modules/banner-middle.jade

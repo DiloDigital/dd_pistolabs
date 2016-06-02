@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Distribuidores</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous" type="text/css"/>
+  </head>
+  <body> 
+    <header id="header" role="presentation" class="header max-width--extra">
+      <div class="logo"><a href="/index.html" title="loguillo" class="logotipo">
+          <div class="slogan"><img src="img/logotipo_pistolabs.png" width="260" alt=""/></div></a></div>
+      <nav id="navigation" role="navigation" class="main-nav">
+        <div id="target" class="main-nav__cont">
+          <ul class="main-nav__list non-margin">
+            <li class="main-nav__item list-none"><a href="/distribuidores.html" title="" class="main-nav__link">Distribuidores</a></li>
+            <li class="main-nav__item list-none"><a href="#contactanos" title="" class="main-nav__link">¡Contáctanos! ▶</a></li>
+          </ul>
+        </div>
+        <div id="menu" class="toggle-menu icon-menu"></div>
+      </nav>
+    </header>
+    <section role="banner" class="banner"><img src="img/distribuidores/banner-01.jpg" alt="" class="img-responsive"/></section>
+    <main id="main">
+      <section id="valores" class="valores box">
+        <div class="max-width">
+          <div class="valores__cont mob-2-pc-3">
+            <div class="valores__item">
+              <figure>
+                <div class="valores-img"><img src="img/distribuidores/valores-01.png" alt="" class="img-responsive"/></div>
+                <figcaption>
+                  <h3 class="title--sub3 text--grey">Venta Exclusiva</h3>
+                  <p class="text--p3 text--grey">Tendras el privilegio de vender marcas completamente nuevas en Chile.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="valores__item">
+              <figure>
+                <div class="valores-img"><img src="img/distribuidores/valores-02.png" alt="" class="img-responsive"/></div>
+                <figcaption>
+                  <h3 class="title--sub3 text--grey">Precios preferentes</h3>
+                  <p class="text--p3 text--grey">Gracias a que somos importadores directos podemos ofrecerte los mejores precios del mercado.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="valores__item">
+              <figure>
+                <div class="valores-img"><img src="img/distribuidores/valores-03.png" alt="" class="img-responsive"/></div>
+                <figcaption>
+                  <h3 class="title--sub3 text--grey">Asesoría</h3>
+                  <p class="text--p3 text--grey">Compartimos contigo información vital sobre el negocio para que puedas empezar ya mismo.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="distribuidores" class="clientes bg--grey-light box">
+      <div class="max-width">
+        <div class="clientes__header text--center">
+          <h2 class="title--sub2">Nuestras Marcas</h2>
+          <p2 class="text--p2 text--white">Las mejores opciones y exclusivas en Chile</p2>
+        </div>
+        <div class="clientes__cont mob-2-vga-2-pc-2">
+          <div class="clientes__item"><img src="img/distrib-01.jpg" alt="" class="img-responsive"/></div>
+          <div class="clientes__item"><img src="img/distrib-02.jpg" alt="" class="img-responsive"/></div>
+        </div>
+        <div class="clientes__button"><a href="/distribuidores.html" class="btn-submit">Sección Distribuidores ▶</a></div>
+      </div>
+    </section>
+    <article id="servicios" class="servicio-section box">
+      <div class="max-width">
+        <div class="servicio-section__item text--center">
+          <div class="servicio-section__header">
+            <h2 class="title--sub2 text--grey">¿Por qué escogernos?</h2>
+            <p class="text--p2 text--grey">Adquiere de manera segura productos nunca antes vistos en Chile. Junto con ellos la asesoría necesaria para tener exito, gracias a nuestro equipo de nutrición y ventas.</p>
+          </div>
+          <div class="servicio-section__img-logo"><img src="img/logotipo_pistolabs-b.png" alt="" class="img-responsive"/></div>
+        </div>
+      </div>
+    </article>
+    <footer role="contentinfo" class="footer bg--grey-light">
+      <div class="max-width--extra">
+        <div id="contactanos" class="contact text--center box">
+          <div class="contact__header">
+            <h2 class="title--sub2">¡Solicita tu producto!</h2>
+          </div>
+          <div class="contact__subtitle1">
+            <p class="text--p2">Solo escríbemos indicando el producto que necesitas y nos pondremos en contacto contigo.</p>
+          </div>
+          <div class="contact-right">
+            <div class="contact__form">
+              <form action="mailer.php" method="POST" id="ajax-contact" class="form">
+                <fieldset id="inputs">
+                  <legend>Datos Personales </legend>
+                  <div class="form__group">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required="required" class="form__control"/>
+                  </div>
+                  <div class="form__group">
+                    <label for="correo">Correo</label>
+                    <input id="correo" type="correo" name="correo" placeholder="Tu correo" required="required" class="form__control"/>
+                  </div>
+                  <div class="form__group">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" type="text" name="telefono" placeholder="Tu teléfono" required="required" class="form__control"/>
+                  </div>
+                  <div class="form__group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos" required="required" class="form__control"></textarea>
+                  </div>
+                </fieldset>
+                <div class="form__submit">
+                  <button id="submit" class="btn-submit">Enviar Mensaje</button>
+                </div>
+                <div id="form-messages"></div>
+              </form>
+            </div>
+          </div>
+          <div class="contact-left">
+            <div class="contact__subtitle2">
+              <p class="text--p2">Solo escríbemos indicando el producto que necesitas y nos pondremos en contacto contigo.</p>
+            </div>
+            <div class="contact__info">
+              <p class="text--p3">Nutricionista: <span>nutricion@pistolabs.com					</span></p>
+              <p class="text--p3">Ventas: <span>ventas@pistolabs.com</span></p>
+            </div>
+            <div class="menu-social">
+              <ul class="menu-social__list non-margin list-none">
+                <li class="menu-social__item"><a href="https://facebook.com" target="_blank" class="icon-facebook menu-social__link"></a></li>
+                <li class="menu-social__item"><a href="https://twitter.com" target="_blank" class="icon-twitter menu-social__link"></a></li>
+                <li class="menu-social__item"><a href="https://instagram.com" target="_blank" class="icon-instagram menu-social__link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="credits bg--grey-dark">
+          <div class="credits__copyright">
+            <p class="text--p5">Todos los derechos reservados</p>
+          </div>
+          <div class="credits__author"><a href="http://dilodigital.com" target="_blank">
+              <p class="text--p5">Diseñado por Dilodigital.com</p></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">Shadowbox.init();</script>
+  </body>
+</html>

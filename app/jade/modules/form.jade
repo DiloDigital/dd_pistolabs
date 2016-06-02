@@ -1,0 +1,18 @@
+form(action="mailer.php", method="POST", id="ajax-contact", class="form")
+    fieldset#inputs
+        legend Datos Personales 
+        .form__group
+            label(for="nombre") Nombre
+            input#nombre(type="text", name="nombre", class="form__control", placeholder="Tu nombre", required)
+        .form__group
+            label(for="correo") Correo
+            input#correo(type="correo", name="correo", class="form__control", placeholder="Tu correo", required)
+        .form__group
+            label(for="telefono") Teléfono
+            input#telefono(type="text", name="telefono", class="form__control", placeholder="Tu teléfono", required)
+        .form__group
+            label(for="mensaje") Mensaje
+            textarea#mensaje(name="mensaje", class="form__control", placeholder="Cuéntanos", required)
+    .form__submit
+        button#submit.btn-submit Enviar Mensaje
+    #form-messages

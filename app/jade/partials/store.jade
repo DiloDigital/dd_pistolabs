@@ -1,0 +1,115 @@
+extends ../layouts/ly_store.jade
+
+
+block header-store
+	h2.title--sub2.text--black Escoge tus productos
+	.store__button
+		a(href="#contactanos").btn-submit ¡Contáctanos! ▶
+
+block producto-store
+	- var prod = ["HYDRA 6", "DIAMOND", "TITANIUM","WHEY PROTEIN FA", "XTREME BEEF PROTEIN", "LEVRO ISO WHEY", "FA CORE NITRO"];
+	- var link = ["img/products/proteinas/item-01.jpg", "img/products/proteinas/item-02.jpg", "img/products/proteinas/item-03.jpg", "img/products/proteinas/item-04.jpg", "img/products/proteinas/item-05.jpg", "img/products/proteinas/item-06.jpg", "img/products/proteinas/item-07.jpg", "img/products/proteinas/item-08.jpg"];
+	- var ref = ["/proteinas-01.html","/proteinas-02.html","/proteinas-03.html","/proteinas-04.html","/proteinas-05.html","/proteinas-06.html", "/proteinas-07.html","/proteinas-08.html"];
+	-for (i = 0; i < 7; i++)
+		.prot.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["DEFEND", "BCAA 8:1:1:", "GLUTA CORE", "SAA CORE"];
+	- var link = ["img/products/aminoacidos/item-01.jpg", "img/products/aminoacidos/item-02.jpg", "img/products/aminoacidos/item-03.jpg", "img/products/aminoacidos/item-04.jpg"];
+	- var ref = ["/aminoacidos-01.html","/aminoacidos-02.html","/aminoacidos-03.html","/aminoacidos-04.html"];
+	-for (i = 0; i < 4; i++)
+		.amin.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["TRI-CREATINE MALATE"];
+	- var link = ["img/products/creatina/item-01.jpg"];
+	- var ref = ["/creatina-01.html"];
+	-for (i = 0; i < 1; i++)
+		.crea.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = [""];
+	- var link = [""];
+	-for (i = 0; i < 0; i++)
+		.gana.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["SO GOOD", "WOW Protein Bar"];
+	- var link = ["img/products/barraproteinas/item-01.jpg", "img/products/barraproteinas/item-02.jpg"];
+	- var ref = ["/barraproteinas-01.html","/barraproteinas-02.html"];
+	-for (i = 0; i < 2; i++)
+		.barr.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["50 CALIBRE", "XTREME NAPALM VITARGO"];
+	- var link = ["img/products/preentrenamiento/item-01.jpg", "img/products/preentrenamiento/item-02.jpg"];
+	- var ref = ["/preentrenamiento-01.html","/preentrenamiento-02.html"];
+	-for (i = 0; i < 2; i++)
+		.pre-.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["THERMO DETONATOR", "KILLA KETONES", "BLACK OPS", "L-CARNITINA 3000"];
+	- var link = ["img/products/quemadores/item-01.jpg", "img/products/quemadores/item-02.jpg", "img/products/quemadores/item-03.jpg", "img/products/quemadores/item-04.jpg"];
+	- var ref = ["/quemadores-01.html","/quemadores-02.html","/quemadores-03.html", "/quemadores-04.html"];
+	-for (i = 0; i < 4; i++)
+		.quem.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["FA TEST CORE"];
+	- var link = ["img/products/prohormonales/item-01.jpg"];
+	- var ref = ["/prohormonales-01.html"];
+	-for (i = 0; i < 1; i++)
+		.pro-.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]
+
+	- var prod = ["MULTIVITAMIN"];
+	- var link = ["img/products/multivitaminicos/item-01.jpg"];
+	- var ref = ["/multivitaminicos-01.html"];
+	-for (i = 0; i < 1; i++)
+		.mult.productos__item.text--sub3.text--grey
+			figure
+				.productos-img
+					a(rel="shadowbox;width=800;height=900" href=ref[i])
+						img(src=link[i],class="img-responsive", alt=prod[i])
+				figcaption
+					p.text--p3.text--grey= prod[i]

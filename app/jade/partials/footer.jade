@@ -1,0 +1,44 @@
+footer(role="contentinfo").footer.bg--grey-light
+	div.max-width--extra
+		.contact.text--center.box#contactanos
+			.contact__header
+				h2.title--sub2 ¡Solicita tu producto!
+			.contact__subtitle1
+				p.text--p2 Solo escríbemos indicando el producto que necesitas y nos pondremos en contacto contigo.
+
+			.contact-right
+				.contact__form
+					include ../modules/form.jade
+			
+			.contact-left
+				.contact__subtitle2
+					p.text--p2 Solo escríbemos indicando el producto que necesitas y nos pondremos en contacto contigo.
+				
+				.contact__info
+					//--p.text--p3 Ventas: 
+						span (+56) 963 043 898
+					p.text--p3 Nutricionista: 
+						span nutricion@pistolabs.com					
+					p.text--p3 Ventas: 
+						span ventas@pistolabs.com
+				
+				.menu-social
+					ul.menu-social__list.non-margin.list-none
+						-var menu = { "icon-facebook": "https://facebook.com", "icon-twitter": "https://twitter.com" ,"icon-instagram": "https://instagram.com" };
+						each val, key in menu
+							li.menu-social__item
+								a(href=val, target="_blank", class=key).menu-social__link
+
+		.credits.bg--grey-dark
+
+			.credits__copyright
+				p.text--p5 Todos los derechos reservados
+			.credits__author
+				a(href="http://dilodigital.com", target="_blank")
+					p.text--p5 Diseñado por Dilodigital.com
+
+
+script(src='//code.jquery.com/jquery-1.12.0.min.js')
+script(src='js/main.js')
+script(type='text/javascript').
+	Shadowbox.init();

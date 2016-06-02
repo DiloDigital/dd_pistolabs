@@ -1,0 +1,21 @@
+header.header#header(role="presentation").max-width--extra
+	.logo
+		block logo-url
+			a(href="/index.html", title="logo").logotipo
+				.slogan
+					img(src="img/logotipo-pistolabs.png", class="img-responsive", alt="")
+			
+
+	nav.main-nav#navigation(role="navigation")
+		.main-nav__cont#target
+			ul.main-nav__list.non-margin
+				-var menu = { "Distribuidores": "/distribuidores.html", "¡Contáctanos! ▶": "#contactanos" };
+				each val, key in menu
+					li.main-nav__item.list-none
+						a(href=val, title="").main-nav__link= key
+		.toggle-menu.icon-menu#menu
+
+section.banner(role="banner")
+	block banner-main
+		.banner-img
+			img(src="img/banner-01v.jpg", class="img-responsive", alt="")

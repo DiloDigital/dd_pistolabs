@@ -1,0 +1,45 @@
+section.store(role="#").box.bg--grey#store
+	div.max-width
+		.header-store
+			block header-store
+				h1.title--main Titulo store
+				
+				//--p.text--main.text--white Descripcion store
+					.store__button
+					a(href="#contactanos").btn-submit ¡Contáctanos! ▶
+		.store__separator
+			aside.store__categorias.bg--black.clearfix
+				h3.title--sub3 CATEGORÍAS
+				a(href="#item-tienda").decoration-none
+					ul.non-margin: ul.listado.non-margin.list-none: li: p.non-margin.text--p3 Todos
+				ul.non-margin
+					ul.listado.non-margin.list-none
+						.text--p3.subcat Nutricion deportiva:
+						each val in ["Proteínas", "Aminoácidos", "Creatina", "Barras de proteínas","Pre-Entrenamiento"]
+							li: a(href="#item-tienda")
+								p.text--p3= val
+				ul.non-margin
+					ul.listado.non-margin.list-none
+						.text--p3.subcat Pérdida de peso:
+						each val in ["Quemadores de grasa"]
+							li: a(href="#item-tienda")
+								p.text--p3= val
+				ul.non-margin
+					ul.listado.non-margin.list-none
+						.text--p3.subcat Bienestar:
+						each val in ["Pro hormonales", "Multivitamínicos"]
+							li: a(href="#item-tienda")
+								p.text--p3= val
+			.store__content.clearfix
+				.header-productos
+					//--h3.text--sub3.text--grey-light Categoría
+					.paginador-productos
+						//--.all
+							
+						//--.paginador
+							a(href="").pag-back: img(src="img/page-back.png", alt="")
+							
+							a(href="").pag-fwd: img(src="img/page-fwd.png", alt="")
+				.productos
+					.productos__cont.mob-tab-2-pc-4#item-tienda
+						block producto-store

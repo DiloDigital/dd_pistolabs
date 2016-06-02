@@ -1,0 +1,109 @@
+// Variables
+
+black = #1d1d1dff
+white = #ffffff
+
+grey_light = #737372ff
+grey = #2b2b2aff
+
+magent = #c662a1ff
+green = #adca23ff
+
+grey_bg0 = #272a2fff
+grey_bg1 = #edededff
+grey_bg2 = #232528ff
+
+
+// Media
+
+b1 = 30em // 480px
+b2 = 48em // 768px
+b3 = 64em // 1024px
+b4 = 75em // 1200px
+
+
+// Grid & Containers
+
++above(b1)
+	[class*=mob-]
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content center
+		& > *
+			width calc(100% * 1 / 1 - 2em - 0.1px)
+			margin 0.7em
+	[class*="mob-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+			
++above(640px)
+			
+	[class*="-vga-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+	[class*="-vga-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+			
++above(b2)
+	[class*="-tab-2"]
+		& > *
+			width calc(100% * 1 / 2 - 2em - .01px)
+	[class*="-tab-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+	[class*="-tab-4"]
+		& > *
+			width calc(100% * 1 / 4 - 2em - .01px)
+		
+			
++above(b3)			
+	[class*="-pc-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+	[class*="-pc-4"]
+		& > *
+			width calc(100% * 1 / 4 - 2em - .01px)
+	[class*="-pc-5"]
+		& > *
+			width calc(100% * 1 / 5 - 2em - .01px)
+
++above(1100px)			
+	[class*="-max-3"]
+		& > *
+			width calc(100% * 1 / 3 - 2em - .01px)
+
+	
+.box
+	padding 4em 5%
+.box--min
+	padding 4em 8%
+.box--extra
+	padding 4em 5%
+	
++above(640px)
+	.box
+		padding 4em 10%
+	.box--min
+		padding 4em 16%
+	.box--extra
+		padding 4em 10%
+
+
++above(b2)
+	.box
+		padding 4em 10%
+	.box--min
+		padding 4em 8%
+	.box--extra
+		padding 4em 10%
+
++above(b3)
+	.box
+		padding 4em 5%
+	.box--min
+		padding 4em 2%
+	.box--extra
+		padding 4em 5%
+		
